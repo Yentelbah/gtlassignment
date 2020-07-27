@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>HW1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style> 
+        input,select,textarea{width:99%;} 
+
+        .body {background-color:white; border-style:ridge; border-radius:.2rem}
+
+        button {background-color: green; color: white; border: .1rem solid white;padding:.2rem; border-radius:.2rem }
+        
+        .form-group {font-family:Arial, Helvetica, sans-serif; font-size: 1.125rem; text-anchor: middle;}
+
+        .panel-body {background-color: lightcyan; padding: 1rem; border-radius:0.2rem;}
+    </style>
+</head>
+
+<body class="body">
+    <div class="row">
+    <div class="col-sm-5">
+    <div class="panel-body">
+        <form role="form" action="action_page.php" target="_blank" method="post">
+            <div class="form-group">
+                <label for="fname">First Name</label><br>
+                <input class="form-control" id="fname" placeholder="Your first name..." type="fname" value=""required>
+            </div><br>
+
+            <div class="form-group">
+                <label for="lname">Last Name</label><br>
+                <input class="form-control" id="lname" placeholder="Your last name..." type="lname" value=""required>
+            </div><br>
+
+            <div class="form-group">
+                <label for="country">Country</label><br>
+                <select class="form-control input-lg m-bot15" id="country">
+                    <option>Australia</option>
+                    <option>Ghana</option>
+                    <option>Nigeria</option>
+                    </select> <br>
+            </div><br>
+
+            <div class="form-group">
+                <label for="subject">Subject</label><br>
+                <textarea class="form-control" id="subject" placeholder="Write something..." style cols="90" rows="8" type="subject"></textarea>
+            </div><br>    
+            
+            <button type="submit" class="btn-info">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
